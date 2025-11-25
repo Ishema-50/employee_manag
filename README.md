@@ -69,7 +69,7 @@ CREATE OR REPLACE PROCEDURE PROCESS_EMPLOYEE_BONUSES AS
     TYPE employee_collection_type IS TABLE OF employee_record_type INDEX BY PLS_INTEGER;
     eligible_employees employee_collection_type;
     
-    -- Cursor to fetch employee data joined with departments
+     Cursor to fetch employee data joined with departments
     CURSOR emp_cursor IS
         SELECT e.EMPLOYEE_ID,
                e.FIRST_NAME || ' ' || e.LAST_NAME AS FULL_NAME,
