@@ -12,6 +12,7 @@ must be treated as one unit → forces use of a RECORD typeCollectionsThere are 
 to store only approved bonus recipientsGOTO StatementWhen the $100,000 executive threshold is hit, we must instantly skip adding that record to the collection and jump to a labeled section
 
 here are the codes 
+   Cursor to fetch employee data joined with departments
 
 <h5/>-- Create DEPARTMENTS table
 CREATE TABLE DEPARTMENTS (
@@ -69,7 +70,7 @@ CREATE OR REPLACE PROCEDURE PROCESS_EMPLOYEE_BONUSES AS
     TYPE employee_collection_type IS TABLE OF employee_record_type INDEX BY PLS_INTEGER;
     eligible_employees employee_collection_type;
     
-     Cursor to fetch employee data joined with departments
+  
     CURSOR emp_cursor IS
         SELECT e.EMPLOYEE_ID,
                e.FIRST_NAME || ' ' || e.LAST_NAME AS FULL_NAME,
