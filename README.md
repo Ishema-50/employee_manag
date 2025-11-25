@@ -65,7 +65,7 @@ CREATE OR REPLACE PROCEDURE PROCESS_EMPLOYEE_BONUSES AS
         department_name DEPARTMENTS.DEPARTMENT_NAME%TYPE
     );
     
-    -- Define a Collection (associative array) to store eligible employee records
+ Define a Collection (associative array) to store eligible employee records
     TYPE employee_collection_type IS TABLE OF employee_record_type INDEX BY PLS_INTEGER;
     eligible_employees employee_collection_type;
     
