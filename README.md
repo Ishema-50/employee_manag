@@ -12,6 +12,7 @@ must be treated as one unit → forces use of a RECORD typeCollectionsThere are 
 to store only approved bonus recipientsGOTO StatementWhen the $100,000 executive threshold is hit, we must instantly skip adding that record to the collection and jump to a labeled section
 
 here are the codes 
+
 -- Create DEPARTMENTS table
 CREATE TABLE DEPARTMENTS (
     DEPARTMENT_ID NUMBER(4) PRIMARY KEY,
